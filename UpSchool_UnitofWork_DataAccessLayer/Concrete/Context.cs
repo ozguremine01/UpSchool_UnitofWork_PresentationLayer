@@ -12,7 +12,7 @@ namespace UpSchool_UnitofWork_DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-H7B28ES;database=UpSchoolUnitofWorkDB; integrated security=true");
+            optionsBuilder.UseSqlServer("server=*********;database=UpSchoolUnitofWorkDB; integrated security=true");
         }
 
         public DbSet<Account> Accounts { get; set; }
